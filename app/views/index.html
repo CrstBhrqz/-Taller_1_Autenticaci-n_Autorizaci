@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Bienvenido al sistema</h1>
+    {% if current_user.is_authenticated %}
+        <p>Hola {{ current_user.id }}! Ve a la <a href="{{ url_for('success') }}">página protegida</a></p>
+    {% else %}
+        <p>Inicia sesión para acceder al contenido</p>
+    {% endif %}
+{% endblock %}
