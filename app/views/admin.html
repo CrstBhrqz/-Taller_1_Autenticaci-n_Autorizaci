@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>¡Bienvenido, Administrador!</h1>
+    <p>Hola, {{ username }}. Tienes acceso a la sección de administración.</p>
+
+    <h2>Panel de Administración</h2>
+    <ul>
+        <li><a>Dashboard</a></li>
+        <li><a>Gestionar Usuarios</a></li>
+        <li><a>Configuraciones del Sitio</a></li>
+    </ul>
+
+    <p><a>Cerrar sesión</a></p>
+{% endblock %}
